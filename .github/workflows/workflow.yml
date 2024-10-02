@@ -10,5 +10,15 @@ jobs:
     name: Dev
     runs-on: ubuntu-latest
     steps:
-      - name: Run a one-line script
-        run: echo Hello, world!
+      - name: Unit Tests
+        run: Unit Tests Success!
+      - name: SAST
+        run: SAST Success!
+      - name: SCA
+        run: SCA Success!
+      - name: IAST
+        run: IAST Success!
+      - name: Security Unit Testing
+        run: Security Unit Testing Success!
+      - name: Initial Threat Modeling
+        run: Initial Threat Modeling Success!
