@@ -22,3 +22,49 @@ jobs:
         run: echo Security Unit Testing Success!
       - name: Initial Threat Modeling
         run: echo Initial Threat Modeling Success!
+  qa:
+    name: QA
+    runs-on: ubuntu-latest
+    needs: dev
+    steps:
+      - name: Integration Tests
+        run: echo Integration Tests Success!
+      - name: SIT
+        run: echo SIT Success!
+      - name: DAST
+        run: echo DAST Success!
+      - name: API Security Testing
+        run: echo API Security Testing Success!
+      - name: Refine Threat Model
+        run: echo Refine Threat Model Success!
+  uat:
+    name: UAT
+    runs-on: ubuntu-latest
+    needs: qa
+    steps:
+      - name: TBD
+        run: TBD!
+  stage:
+    name: stage
+    runs-on: ubuntu-latest
+    needs: qa
+    steps:
+      - name: TBD
+        run: TBD!
+  pre-prod:
+    name: Pre-Prod
+    runs-on: ubuntu-latest
+    needs: 
+      - uat
+      - stage
+    steps:
+      - name: TBD
+        run: TBD!
+  prod:
+    name: Production
+    runs-on: ubuntu-latest
+    needs: 
+      - pre-prod
+    steps:
+      - name: TBD
+        run: TBD!
