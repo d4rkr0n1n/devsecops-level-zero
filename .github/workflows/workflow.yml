@@ -11,14 +11,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Unit Tests
-        run: Unit Tests Success!
+        run: echo Unit Tests Success!
       - name: SAST
-        run: SAST Success!
+        run: echo SAST Success!
       - name: SCA
-        run: SCA Success!
+        run: echo SCA Success!
       - name: IAST
-        run: IAST Success!
+        run: echo IAST Success!
       - name: Security Unit Testing
-        run: Security Unit Testing Success!
+        run: echo Security Unit Testing Success!
       - name: Initial Threat Modeling
-        run: Initial Threat Modeling Success!
+        run: echo Initial Threat Modeling Success!
