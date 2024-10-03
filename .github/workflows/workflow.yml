@@ -38,6 +38,9 @@ jobs:
             datacenter: "site-a"
           - site: "staging"
             datacenter: "site-b"
+    steps:
+      - name: ${{ matrix.site }}
+        run: echo TBD!
   prod:
     name: Production
     runs-on: ubuntu-latest
