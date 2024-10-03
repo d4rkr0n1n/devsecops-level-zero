@@ -34,12 +34,11 @@ jobs:
     strategy:
       matrix:
         include:
-          - site: "production"
-            datacenter: "site-a"
-          - site: "staging"
-            datacenter: "site-b"
+          - env: "pre-prod"
+          - env: "staging"
+          - env: "env"
     steps:
-      - name: ${{ matrix.site }}
+      - name: ${{ matrix.env }}
         run: echo TBD!
   prod:
     name: Production
