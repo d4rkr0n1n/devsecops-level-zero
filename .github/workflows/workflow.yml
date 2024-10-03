@@ -36,7 +36,7 @@ jobs:
         include:
           - env: "pre-prod"
           - env: "staging"
-          - env: "env"
+          - env: "infosec"
     steps:
       - name: ${{ matrix.env }}
         run: echo TBD!
